@@ -14,7 +14,7 @@ local function SetEmotesList(x)
 	Human:WaitForChild("HumanoidDescription"):SetEmotes(EmoteList)
 end
 if ME.Character then
-	SetEmotesList(ME.Character)
+	task.spawn(SetEmotesList, ME.Character)
 end
 ME.CharacterAdded:Connect(SetEmotesList)
 return EmoteList
