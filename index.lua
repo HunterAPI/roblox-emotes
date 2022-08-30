@@ -17,3 +17,4 @@ if ME.Character then
 	SetEmotesList(ME.Character)
 end
 ME.CharacterAdded:Connect(SetEmotesList)
+return EmoteList
