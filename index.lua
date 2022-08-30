@@ -1,3 +1,4 @@
+assert(not game:IsLoaded() and game.Loaded:Wait() or game)
 local cloneref = cloneref or function(...) return ... end
 local Http = cloneref(game:GetService("HttpService"))
 local Starter = cloneref(game:GetService("StarterGui"))
